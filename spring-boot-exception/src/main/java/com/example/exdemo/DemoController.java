@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-	@RequestMapping(value = "/sayHi", method = RequestMethod.GET)
+	@RequestMapping(value = "/testexception", method = RequestMethod.GET)
 	public void sayHello() throws CustomException {
-				throw new CustomException("Error occured");
-		//return "Hi";
+		try {
+			int a = 15/0;
+		}catch(Exception e) {
+				throw new CustomException("Custom Error occured");
+		}
 	}
 }

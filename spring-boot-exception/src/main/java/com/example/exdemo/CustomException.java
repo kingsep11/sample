@@ -1,9 +1,11 @@
 package com.example.exdemo;
 
-import org.springframework.stereotype.Component;
-
 public class CustomException extends Exception {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String messages;
 	
 	
