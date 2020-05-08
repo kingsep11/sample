@@ -75,3 +75,15 @@
             </executions>
           </plugin>
         </plugins>
+
+# How to disable the specific auto-configuration ?
+
+    @Configuration
+    @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+    public class CustomConfiguration {
+    }
+    
+    or with @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+    
+    or configure in properties file 
+    spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
