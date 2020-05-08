@@ -12,4 +12,10 @@ continuation of spring-boot-interview-questions.md...
   - @SpringBootApplication is equivalant to  @Configuration, @EnableAutoConfigurationand @ComponentScan with their default attributes
 
 # How to include custom static content ?
-  - spring boot will look into /static, /public, /resources, /webapp /META-INF/resources in the class path or root of the ServletContext
+  - spring boot will look into /static, /public, /resources, /webapp /META-INF/resources in the class path or root of the ServletContext.
+  - We can put our custom static content in any of the above folders. For example, put the custom.js file under  /resources/static/custom.js. To refer to this file in the view use the following code
+  
+        <script src = “/js/test.js”></script>
+
+# How to use a profile with Spring Boot?
+    application-{profile}.properties
