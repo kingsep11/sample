@@ -30,4 +30,9 @@
    - webservice etc.,
 
 # Usage of spring boot cli
-   - a command line interface tool that helps to create / quick start the spring boot application using groovy script
+   - a command line interface tool that helps to create / quick start the spring boot application using groovy script.
+   
+# How to enable custom Auto-configuration in spring boot
+  - in jar file META-INF/spring.properties we should use a fully qualified name of the class under the EnableAutoConfiguration in the spring.factories property file.below is the example
+  - org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.javadevjournal.config.HelloServiceAutoConfiguration
+
