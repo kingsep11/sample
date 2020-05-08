@@ -11,5 +11,21 @@
    - Spring is a framework to create stand-alone / web applications, which has lots of modules core, MVC, ORM, Data etc, to do all these developer needs to write lot of configuration code.
    - Spring Boot - helps to manage the configuration and bioler plate code automatically , and production ready application embedded (tomcat, Undertow, Jetty) container inside.
    
-    
+# Different components of spring boot:
+  -spring boot initializer,
+  - Cli
+  - starter parents
+  - Auto configuration
+  - Actuators
+  
+# Spring-Boot starters:
+    - convenient dependencies can be inclluded in the spring boot application
+    - Spring Boot Starters are just JAR files used by Spring Boot for auto-dependency
 
+# what sring-boot starters are available ?
+   - Web
+   - Jdbc
+   - JPA
+   - security
+   - webservice etc.,
+ 
