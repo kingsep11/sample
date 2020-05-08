@@ -6,3 +6,7 @@ continuation of spring-boot-interview-questions.md...
   - Enabled HTTP/2.0
   - Embedded Container updated to Tomcat 8.5 , Jetty 9.4
   - A brand new actuator architecture, with support for Spring MVC, WebFlux and Jersey.
+
+# What is @SpringBootApplication annotation
+  - Its an entry point for any spring boot application.
+  - @SpringBootApplication is equivalant to  @Configuration, @EnableAutoConfigurationand @ComponentScan with their default attributes
