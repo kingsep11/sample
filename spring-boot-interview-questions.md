@@ -52,4 +52,4 @@
 
 # What is spring-boot actuator ?
   -  the actuator helps to monitor and manage the applications in the production environment.
-  -  with this we can monitor beans, health, metrics, logging, audit, environment, threaddump etc.,
+  -  with this we can monitor /beans, /health, /metrics, /logging, /auditingevents, /environment, /threaddump etc.,
