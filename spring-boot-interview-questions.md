@@ -61,4 +61,17 @@
   - spring-boot:start or spring-boot:stop  to manage  the lifecycle of the application (when integration test)
   - spring-boot:build-inf will generate the build information than can be used with actuator.
   
- 
+         <plugins>
+          <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.0.5.RELEASE</version> <!--optional-->
+            <executions> <!--optional-->
+              <execution>
+                <goals>
+                  <goal>repackage</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
