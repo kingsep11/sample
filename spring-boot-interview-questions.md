@@ -53,3 +53,12 @@
 # What is spring-boot actuator ?
   -  the actuator helps to monitor and manage the applications in the production environment.
   -  with this we can monitor /beans, /health, /metrics, /logging, /auditingevents, /environment, /threaddump etc.,
+  
+# Why do we need maven plugin in spring-boot ?
+  - This provide maven support in spring-boot applocation
+  - spring-boot:run to run the application
+  - spring-boot:repackage to rebuild the application
+  - spring-boot:start or spring-boot:stop  to manage  the lifecycle of the application (when integration test)
+  - spring-boot:build-inf will generate the build information than can be used with actuator.
+  
+ 
