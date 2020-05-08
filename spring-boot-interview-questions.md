@@ -1,6 +1,6 @@
 # What is Spring Boot ?
   - Spring-Boot helps to create stand-alone and production ready application, with a very minimal configuration
-  Advantages are :
+    Advantages are :
     - Stand alone and production ready application
     - Enabling auto configuration
     - Embedded container (tomcat, Jetty, under-tow)
