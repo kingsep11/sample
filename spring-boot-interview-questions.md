@@ -28,4 +28,6 @@
    - JPA
    - security
    - webservice etc.,
- 
+
+# Usage of spring boot cli
+   - a command line interface tool that helps to create / quick start the spring boot application using groovy script
