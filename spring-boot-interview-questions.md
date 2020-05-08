@@ -42,9 +42,14 @@
 # in spring-boot how to reload the changes without restarting the server ?
   - using spring-boot dev tools dependency in the pom.xml
   - below is the example
+  
           <dependencies>
               <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
               </dependency>
           </dependencies>
+
+# What is spring-boot actuator ?
+  -  the actuator helps to monitor and manage the applications in the production environment.
+  -  with this we can monitor beans, health, metrics, logging, audit, environment, threaddump etc.,
