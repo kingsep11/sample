@@ -57,5 +57,7 @@ continuation of spring-boot-interview-questions.md...
    - to disable the web server configuration, configure below property in application.properties
    
           spring.main.web-application-type=none
-          
+            
+# How to create non web applications in spring boot ?
+  - to create non-web application, we shouldnt add web dependencies in pom.xml
   
