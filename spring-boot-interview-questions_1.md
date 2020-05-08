@@ -10,3 +10,6 @@ continuation of spring-boot-interview-questions.md...
 # What is @SpringBootApplication annotation
   - Its an entry point for any spring boot application.
   - @SpringBootApplication is equivalant to  @Configuration, @EnableAutoConfigurationand @ComponentScan with their default attributes
+
+# How to include custom static content ?
+  - spring boot will look into /static, /public, /resources, /webapp /META-INF/resources in the class path or root of the ServletContext
