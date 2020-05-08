@@ -36,3 +36,15 @@
   - in jar file META-INF/spring.properties we should use a fully qualified name of the class under the EnableAutoConfiguration in the spring.factories property file.below is the example
   - org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.javadevjournal.config.HelloServiceAutoConfiguration
 
+# Can we use the spring-boot for non spring application ?
+  - No
+  
+# in spring-boot how to reload the changes without restarting the server ?
+  - using spring-boot dev tools dependency in the pom.xml
+  - below is the example
+          <dependencies>
+              <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+              </dependency>
+          </dependencies>
