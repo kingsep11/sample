@@ -61,3 +61,39 @@ continuation of spring-boot-interview-questions.md...
 # How to create non web applications in spring boot ?
   - to create non-web application, we shouldnt add web dependencies in pom.xml
   
+# How the ApplicationContext created by Spring Boot?
+  - Spring boot creates ApplicationContext ahen SpringApplication.run() method gets executed.
+  - there is ConfigurableApplicationContext which extends ApplicationContext
+  
+  public ConfigurableApplicationContext run(String...args) {
+ //preparation
+ ConfigurableApplicationContext context = null;
+
+ //create and return application context
+ context = createApplicationContext();
+}
+
+    protected ConfigurableApplicationContext createApplicationContext() {
+     Class << ? > contextClass = this.applicationContextClass;
+     if (contextClass == null) {
+      try {
+       switch (this.webApplicationType) {
+        case SERVLET:
+         contextClass = Class.forName(DEFAULT_SERVLET_WEB_CONTEXT_CLASS);
+         break;
+        case REACTIVE:
+         contextClass = Class.forName(DEFAULT_REACTIVE_WEB_CONTEXT_CLASS);
+         break;
+        default:
+         contextClass = Class.forName(DEFAULT_CONTEXT_CLASS);
+       }
+      } catch (ClassNotFoundException ex) {
+       throw new IllegalStateException(
+        "Unable create a default ApplicationContext, " +
+        "please specify an ApplicationContextClass",
+        ex);
+      }
+     }
+     return (ConfigurableApplicationContext) BeanUtils.instantiateClass(contextClass);
+    }
+
