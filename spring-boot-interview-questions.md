@@ -87,3 +87,20 @@
     
     or configure in properties file 
     spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# What is the use of YAML file
+  - YAML is a superset of JSON
+  - Spring-boot supports snakeYAML (application.yml) as an alternate to application.properties
+  - Let’s take the following example of the application.properties file.
+  
+        environments.dev.url=https://dev.javadevjournal.com
+        environments.dev.name=Developer Setup
+        
+  It can represent the YAML files as follows.
+  
+    environments:
+       dev:
+           url: https://dev.javadevjournal.com
+           name: Developer Setup    
+  
+   
