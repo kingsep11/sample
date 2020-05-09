@@ -75,8 +75,8 @@ continuation of spring-boot-interview-questions_1.md
             
    # How to set up Spring Boot application using maven?
        - First create a Maven project
-       - in the pom.xml all spring-boot-startert-parent as below will make the application as spring boot
-       - if doesnt want to add spring-boot-startert-parent use spring-boot dependency management
+       - in the pom.xml add spring-boot-startert-parent as below will make the dependency management all the dependencies inherited from parent POM
+       - if doesnt want to inherit from spring-boot-startert-parent use spring-boot dependency management as alternate way
        
       <parent>
           <groupId>org.springframework.boot</groupId>
@@ -84,7 +84,7 @@ continuation of spring-boot-interview-questions_1.md
           <version>2.1.4.RELEASE</version>
       </parent>
       
-      alternate option using dependency management
+      alternate option configuring spring-boot dependencies if we do not want to inherit from parent POM
       
       <dependencyManagement>
           <dependencies>
