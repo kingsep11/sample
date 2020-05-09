@@ -32,4 +32,17 @@ continuation of spring-boot-interview-questions_1.md
     Yes ! please check 
     https://www.javadevjournal.com/spring-boot/multiple-data-sources-with-spring-boot/
     
+# What is the use of starter POM in our Spring Boot application?
+  - this is question about spring boot starter parent is a convenient way of dependency management
+  - version of other dependencies is automatically handled by spring boot based on parent version
+  
+        <parent>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-parent</artifactId>
+          <version>2.1.1.RELEASE</version>
+        </parent>
+        
+# How to access a value defined in the application.properties file in Spring Boot?
  
+      @Value("${property.name}")
+      String variableName;
