@@ -46,3 +46,59 @@ continuation of spring-boot-interview-questions_1.md
  
       @Value("${property.name}")
       String variableName;
+
+# What is relaxed binding in Spring Boot?
+  - When binding properties from application.properties to @ConfigurationProperties beans, spring boot uses relaxed binding
+    which means it doesn't look for exact match for properties .
+  - we can write such properties in camelCase,snake_case, or in uppercase, below is the example
+  
+        @ConfigurationProperties(prefix="javadevjournal.demoapplication-project.person")
+        public class CustomerProperties {
+
+          private String firstName;
+
+          public String getFirstName() {
+            return this.firstName;
+          }
+
+          public void setFirstName(String firstName) {
+            this.firstName = firstName;
+          }
+        }
+        
+    - the relaxed binding for the above bean, firstname can be configured as below 
+    
+            javadevjournal.demoapplication-project.person.first-name
+            javadevjournal.demoApplication.person.firstName
+            javadevjournal.demo_application.person.first_name
+            JAVADEVJOURNAL_DEMOAPPLICATION_PERSON_FIRSTNAME
+            
+   # How to set up Spring Boot application using maven?
+       - First create a Maven project
+       - in the pom.xml all spring-boot-startert-parent as below will make the application as spring boot
+       - if doesnt want to add spring-boot-startert-parent use spring-boot dependency management
+       
+      <parent>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-parent</artifactId>
+          <version>2.1.4.RELEASE</version>
+      </parent>
+      
+      alternate option using dependency management
+      
+      <dependencyManagement>
+          <dependencies>
+              <dependency>
+                  <!-- Import dependency management from Spring Boot -->
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-dependencies</artifactId>
+                  <version>2.1.4.RELEASE</version>
+                  <type>pom</type>
+                  <scope>import</scope>
+              </dependency>
+          </dependencies>
+      </dependencyManagement>    
+      
+      
+       
+       
