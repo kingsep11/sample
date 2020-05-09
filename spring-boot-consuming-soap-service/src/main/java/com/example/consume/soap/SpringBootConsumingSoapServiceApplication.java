@@ -1,14 +1,13 @@
-package com.example.security;
+package com.example.consume.soap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootSecurityApplication {
+public class SpringBootConsumingSoapServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootSecurityApplication.class, args);
+		SpringApplication.run(SpringBootConsumingSoapServiceApplication.class, args);
 	}
 
-	
 }

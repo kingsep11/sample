@@ -11,4 +11,9 @@ public class HomeController {
 	public String home() {
 		return "welcome.jsp";
 	}
+	
+	/**@RequestMapping("login")
+	public String doLogin() {
+		return "login.jsp";
+	}**/
 }
