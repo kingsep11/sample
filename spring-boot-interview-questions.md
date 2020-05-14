@@ -17,9 +17,9 @@
   - Spring MVC : deployment descriptor(web.xml) needed
   - Spring MVC : add needed dependencies seperately
   
-  ~ Spring-Boot : helps to quick bootstrap the spring application of any module
-  ~ Spring-Boot : auto confugured (no manual configuration needed)
-  ~ Spring-Boot : dependencies are wrapped up with parent
+  - Spring-Boot : helps to quick bootstrap the spring application of any module
+  - Spring-Boot : auto confugured (no manual configuration needed)
+  - Spring-Boot : dependencies are wrapped up with parent
 
 # Different components of spring boot:
   -spring boot initializer,
