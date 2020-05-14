@@ -10,7 +10,17 @@
 # Spring Vs Spring-Boot:
    - Spring is a framework to create stand-alone / web applications, which has lots of modules core, MVC, ORM, Data etc, to do all these developer needs to write lot of configuration code.
    - Spring Boot - helps to manage the configuration and bioler plate code automatically , and production ready application embedded (tomcat, Undertow, Jetty) container inside.
-   
+
+# Spring MVC Vs Spring-Boot:
+  - Spring MVC is a spring module to create web based applications
+  - Spring MVC : manual configuration needed (boiler plate code )
+  - Spring MVC : deployment descriptor(web.xml) needed
+  - Spring MVC : add needed dependencies seperately
+  
+  ~ Spring-Boot : helps to quick bootstrap the spring application of any module
+  ~ Spring-Boot : auto confugured (no manual configuration needed)
+  ~ Spring-Boot : dependencies are wrapped up with parent
+
 # Different components of spring boot:
   -spring boot initializer,
   - Cli
